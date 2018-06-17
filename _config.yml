@@ -9,14 +9,14 @@ description: "My personal portfolio, and blog." # used by search engines
 theme_settings:
   # Meta
   title: Anthony Mendez's Portfolio and Blog # blog's title
-  avatar: assets/img/IMG_0117_cropped.png
+  ##avatar: assets/img/IMG_0117_cropped.png
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <h2>Hi! I'm Anthony, welcome to my <code>Portfolio</code> and <code>Blog</code>.</h2>
-  header_text_feature_image: assets/img/pexels/homephoto.JPG
+  header_text_feature_image: assets/img/pexels/homephoto.jpg
   footer_text: >
    Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
