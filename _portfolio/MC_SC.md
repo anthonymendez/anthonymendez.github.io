@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Simple Coins: A Minecraft Mod"
-feature-img: "assets/img/portfolio/cabin.png"
-img: "assets/img/portfolio/cabin.png"
+feature-img: "assets/img/portfolio/simplecoins.png"
+img: "assets/img/portfolio/simplecoins.png"
 date: 2017-01-15
 ---
 <h3>About</h3>
