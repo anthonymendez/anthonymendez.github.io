@@ -2,7 +2,7 @@
 layout: page
 title: Contact Me
 permalink: /contact/
-feature-img: "assets/img/pexels/contactphoto.JPG"
+feature-img: "assets/img/pexels/contactphoto.jpg"
 tags: [Contact, Github, LinkedIn, Twitter]
 ---
 <div style = "text-align:center;">
