@@ -5,6 +5,7 @@ feature-img: "assets/img/portfolio/vectorshot.png"
 img: "assets/img/portfolio/vectorshot.png"
 date: 2017-07-4
 ---
+
 ### About
 
 Vector Shot is a top-down, 2D space shooter. The main objective of this game is to collect all 8 keys in the level. Move with WASD, aim with the mouse, shoot with the mouse and you reload with R. 
@@ -25,7 +26,7 @@ Looking back on Vector Shot, I am incredibly happy with the way it turned out. I
 
 I think leaving the code as is, is a nice reminder for myself of when I started.
 
-#### Links
+### Links
 <a href = "https://github.com/anthonymendez/Vector-Shot">Github Repository</a>
 
 <a href = "https://anthonymendez.itch.io/vector-shot">Itch.io</a>

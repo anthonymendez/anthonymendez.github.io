@@ -70,6 +70,10 @@ header {
     .post-content {
         @extend %padding-regular;
         padding-bottom: 0;
+
+        img + em { 
+            
+        }
     }
     footer {
         @extend %padding-regular;
