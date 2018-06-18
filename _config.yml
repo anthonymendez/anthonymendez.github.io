@@ -1,21 +1,23 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://anthonymendez.github.io"
-title: Anthony Mendez's Portfolio and Blog # site's title
-description: "My personal portfolio and blog." # used by search engines
+title: Anthony Mendez's Personal Site # site's title
+description: "My personal blog and portfolio." # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Anthony Mendez's Portfolio and Blog # blog's title
+  title: Anthony Mendez's Personal Site # blog's title
   avatar: assets/img/Anthony.png
   favicon: assets/img/Anthony.png
   gravatar: # Email MD5 hash
 
   # Header and footer text
-  #header_text: > #two or three lines to describe your site
-  #header_text_feature_image: assets/img/pexels/homephoto.JPG
+  header_text: > #two or three lines to describe your site
+   <h1> Hi, I'm Anthony Mendez </h1>
+   <h3>Computer Engineer, Programmer, Nerd, Motorsports Enthusiast</h3>
+  header_text_feature_image: assets/img/pexels/contactphoto.JPG
   footer_text: >
    Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 

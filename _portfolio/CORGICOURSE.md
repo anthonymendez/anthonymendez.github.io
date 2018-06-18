@@ -6,8 +6,6 @@ img: "assets/img/portfolio/corgicourse.png"
 date: 2017-07-17
 ---
 
-### About
-
 Corgi Course is 2D Side-Scrolling Infinite Runner game. The game is very barebones and basic with the objective being: Jump over all the scary vacuum cleaners.
 
 ### Development

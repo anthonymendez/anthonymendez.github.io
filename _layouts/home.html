@@ -4,15 +4,63 @@ layout: default
 
 <div class="home">
   {% if site.theme_settings.header_text %}
-  <div id="main" class="call-out"
+  <div id="main" 
+  class="call-out"
   style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
     {{ site.theme_settings.header_text }}
+    <div class = "contact-buttons">
+      {% include icons.html %}
+    </div>
   </div>
   {% endif %}
 
+  <article>
+    <section class = "post-content">
+      <h1 id = "aboutme">
+        About Me
+      </h1>
+      <p>
+          Hi, I'm Anthony. I'm a student attending the University of Massachusetts Amherst. I'm going for a Bachelors of Science in Computer Systems Engineering with a Minor in Computer Science. I'm currently the Vice-Chair of the <a href = "http://sites.ieee.org/sb-umassa/">IEEE UMass Student Chapter</a> where we create and volunteer events for the undergraduates of the ECE department.
+      </p>
+    </section>
+  </article>
+
+<hr />
+
+  <div class="portfolio-sample">
+    <article>
+      <h1>Here are my most recent projects</h1> 
+    </article>
+     {% for post in site.portfolio limit:3 %}
+      <div class="portfolio-sample-block">
+          <img src = "{{ site.baseurl }}/{{ post.img }}" />
+          <div>
+            <h3>
+              <a class = "post-link" href = "{{ site.baseurl }}{{ post.url }}">
+                {{post.title}}
+              </a>
+            </h3>
+            <p>
+                {{post.content | strip_html | truncate:500 }}
+            </p>
+            <a class="button" href="{{ post.url | prepend: site.baseurl }}">
+                {{ site.theme_settings.str_continue_reading }}
+            </a>
+          </div>
+      </div>
+    {% endfor %}
+    </div>
+
+<hr />
+
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in paginator.posts limit:1 %}
     <div class="post-teaser">
+      <h1>
+        <a class = "post-link" href = "{{ post.url | prepend: site.baseurl }}">
+          Read my most recent blog post!
+        </a>
+      </h1>
       {% if post.thumbnail %} 
       <div class="post-img">
          <img src="{{ site.baseurl }}/{{ post.thumbnail }}">
@@ -20,11 +68,11 @@ layout: default
       {% endif %}
       <span>
           <header>
-            <h1>
+            <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                 {{ post.title }}
               </a>
-            </h1>
+            </h2>
             <p class="meta">
               {{ post.date | date: "%B %-d, %Y" }}
             </p>
@@ -58,4 +106,13 @@ layout: default
     {% endif %}
   </div>
   {% endif %}
+</div>
+
+<div id = "contactme" class = "contact-me">
+  <h1>
+    Contact Me:
+  </h1>
+  <div class = "contact-buttons">
+    {% include icons.html %}
+  </div>
 </div>

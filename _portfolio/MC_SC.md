@@ -5,13 +5,12 @@ feature-img: "assets/img/portfolio/simplecoins.png"
 img: "assets/img/portfolio/simplecoins.png"
 date: 2017-01-15
 ---
-<h3>About</h3>
 
 Simple Coins is a Minecraft 1.11.2 Mod that intended to expand the trading experience between players and villagers. The mod would add two coins (Iron and Gold) that could only be created with the Mint Block. There would also be a Banker Villager where you could trade your coins for emeralds.
 
 I envisioned this mod as a way for player communities to be able trade more easily between each other. The only other currency, emerald, is cumbersome to get in-game. So players could use their current iron and gold stockpiles, to convert it into coins (and vice-versa) to create their own basic economies.
 
-<h3>Development</h3>
+### Development
 
 Created during my freshman year winter break, Simple Coins was my first and only endeavor in Minecraft Forge Modding, or anything related to game development for that matter.
 
@@ -19,11 +18,11 @@ I kept track of the progress of the development through a <a href = "http://anth
 
 If there was one thing I would go back and change about this project, is just how the readable the code is. This was at the time when I would use the variable name "list" for a single list object in a class, rather than say, "configElementList". The lack of comments is something I would've changed as well. I've learned little documentation makes it hard on not only other developers, but also yourself if they wan to make changes or observe what you've done.
 
-<h3>Final Words</h3>
+### Final Words
 
 Simple Coins was a fun project. I'm glad I made the jump and tried something new. Not only did I learn about Git, I learned about my new-found interest in Game Development.
 
-<h4>Links</h4>
+### Links
 <ul>
     <li>
         <a href = "https://github.com/anthonymendez/Simple-Coins-MinecraftMod">Github Repository</a>

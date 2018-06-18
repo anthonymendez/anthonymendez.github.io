@@ -1,0 +1,69 @@
+.contact-buttons {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    list-style-type: none;
+}
+
+.content {
+    .post-content {
+        
+    }
+}
+
+.portfolio-sample {
+
+    display: inline-flex;
+    flex-direction: column;
+
+    article {
+        border: none;
+        padding-top: 0;
+    }
+
+    .portfolio-sample-block {
+        width: 100%;
+        display:flex;
+
+        padding:0% 15%;
+
+        box-sizing: border-box;
+        padding-bottom: $padding-small;
+
+        img {
+            height:15em;
+            width:15em;
+            padding:$padding-x-small;
+            align-self: center;
+            flex-grow: 2;
+        }
+
+        div {
+            
+            color: $text-color;
+
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.contact-me {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding:4% 30%;
+    
+    h2 {
+        align-self: center;
+    }
+
+    .contact-buttons{
+        align-self: center;
+    }
+}

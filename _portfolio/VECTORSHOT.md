@@ -6,9 +6,7 @@ img: "assets/img/portfolio/vectorshot.png"
 date: 2017-07-4
 ---
 
-### About
-
-Vector Shot is a top-down, 2D space shooter. The main objective of this game is to collect all 8 keys in the level. Move with WASD, aim with the mouse, shoot with the mouse and you reload with R. 
+Vector Shot is a top-down, 2D space shooter. The main objective of this game is to collect all 8 keys in the level. Move with WASD, aim with the mouse, shoot with the mouse and you reload with R. Inspired by Hotline Miami, Vector Shot is a short, fast-paced game that requires patience to learn the map.
 
 ### Development
 
