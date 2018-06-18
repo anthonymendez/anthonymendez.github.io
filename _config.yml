@@ -2,7 +2,7 @@
 baseurl: ""
 url: "https://anthonymendez.github.io"
 title: Anthony Mendez's Portfolio and Blog # site's title
-description: "My personal portfolio, and blog." # used by search engines
+description: "My personal portfolio and blog." # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
