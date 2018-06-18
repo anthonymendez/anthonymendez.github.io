@@ -1,7 +1,12 @@
 .site-header {
     //padding-bottom: 1%;
     padding: 2% 2% 1% 2%;
-    background: $brand-color;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d4d4d4+0,999999+100 */
+    background: $brand-color; /* Old browsers */
+    background: -moz-linear-gradient(top, $brand-color 0%, $border-color 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $brand-color 0%, $border-color 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $brand-color 0%, $border-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$brand-color, endColorstr=$border-color, GradientType=0 ); /* IE6-9 */
     border-bottom: $border-radius groove $border-color;
     display: inline-block;
     float: left;
