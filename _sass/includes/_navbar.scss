@@ -26,7 +26,6 @@
     }
 
     .avatar {
-        // image-rendering: pixelated;
         height: 3em;
         width: 3em;
         float: left;
@@ -60,6 +59,8 @@
             margin-right: 0.4em;
         }
         a {
+            font-size: $font-size;
+
             &:hover {
                 color: $link-color;
             }
