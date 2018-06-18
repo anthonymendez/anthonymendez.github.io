@@ -21,14 +21,12 @@
     }
 
     .avatar {
+        // image-rendering: pixelated;
         height: 3em;
         width: 3em;
         float: left;
         margin-top: -13px;
-        border-radius: 0.2em;
-        margin-right: 0.5em;
         padding: 10px 10px;
-
     }
 
     .site-title {

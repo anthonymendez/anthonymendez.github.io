@@ -9,8 +9,8 @@ description: "My personal portfolio, and blog." # used by search engines
 theme_settings:
   # Meta
   title: Anthony Mendez's Portfolio and Blog # blog's title
-  ##avatar: assets/img/IMG_0117_cropped.png
-  favicon: assets/favicon.ico
+  avatar: assets/img/Anthony.png
+  favicon: assets/img/Anthony.png
   gravatar: # Email MD5 hash
 
   # Header and footer text
