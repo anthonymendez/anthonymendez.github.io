@@ -5,12 +5,9 @@ layout: default
 <div class="home">
   {% if site.theme_settings.header_text %}
   <div id="main" 
-  class="call-out"
+  class="call-out background-zoom"
   style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
     {{ site.theme_settings.header_text }}
-    <div class = "contact-buttons">
-      {% include icons.html %}
-    </div>
   </div>
   {% endif %}
 
@@ -32,22 +29,26 @@ layout: default
       <h1>Here are my most recent projects</h1> 
     </article>
      {% for post in site.portfolio limit:3 %}
-      <div class="portfolio-sample-block">
-          <img src = "{{ site.baseurl }}/{{ post.img }}" />
+      <article class="portfolio-sample-block">
           <div>
             <h3>
               <a class = "post-link" href = "{{ site.baseurl }}{{ post.url }}">
                 {{post.title}}
               </a>
             </h3>
-            <p>
-                {{post.content | strip_html | truncate:500 }}
-            </p>
-            <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-                {{ site.theme_settings.str_continue_reading }}
-            </a>
+            <div>
+              <div class = "post-img">
+                <img src = "{{ site.baseurl }}/{{ post.img }}" />
+              </div>
+              <p>
+                  {{post.content | strip_html | truncate:500 }}
+              </p>
+              <a class="button" href="{{ post.url | prepend: site.baseurl }}">
+                  {{ site.theme_settings.str_continue_reading }}
+              </a>
+             </div>
           </div>
-      </div>
+      </article>
     {% endfor %}
     </div>
 
@@ -108,11 +109,11 @@ layout: default
   {% endif %}
 </div>
 
-<div id = "contactme" class = "contact-me">
-  <h1>
-    Contact Me:
-  </h1>
-  <div class = "contact-buttons">
-    {% include icons.html %}
-  </div>
-</div>
+<!-- <div class = "contact-buttons">
+    <h2>
+      Get in Touch
+    </h2>
+    <div>
+      {% include icons.html %}
+    </div>
+  </div> -->

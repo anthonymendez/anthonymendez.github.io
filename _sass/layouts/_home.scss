@@ -1,10 +1,45 @@
+.background-zoom {
+    
+}
+
 .contact-buttons {
-    display:flex;
+    display:inline-flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-self: center;
     align-items: baseline;
     list-style-type: none;
+    width: 50%;
+
+    @media (max-width: 600px){
+        width: 100%;
+    }
+
+    @media (max-width: 1200px){
+        width: 100%;
+    }
+
+    border-radius: 10px;
+    border: 2px groove $border-color;
+    background-color: $background-color;
+
+    padding:$padding-x-small/2;
+
+    h2 {
+        padding:0;
+        color: $text-color;
+        align-self: center;
+        display: inline-flex;
+    }
+
+    div {
+        align-self: center;
+        display:inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
 }
 
 .content {
@@ -26,44 +61,55 @@
     .portfolio-sample-block {
         width: 100%;
         display:flex;
-
         padding:0% 15%;
-
         box-sizing: border-box;
         padding-bottom: $padding-small;
 
-        img {
-            height:15em;
-            width:15em;
-            padding:$padding-x-small;
-            align-self: center;
-            flex-grow: 2;
+        @media (max-width: 600px) {
+            flex-direction: column;
+            padding-left: -$padding-x-small;
+            padding-right: -$padding-x-small;
         }
-
+        
         div {
-            
             color: $text-color;
+            
+            img {
+                width: 100%;
+                padding: 0;
+                vertical-align: middle;
+            }
 
-            h2 {
-                margin: 0;
+            .post-img {
+                vertical-align: middle;
+                border-radius: 10px;
+                overflow: hidden;
+
+                @media (min-width: $break) {
+                    height: 250px;
+                } //Smaller screen
+                @media screen and (max-width: $break) {
+                    height: 150px;
+                }
+            }
+
+            .post-img img {
+                //max-width: 100%;
+    
+                -moz-transition-timing-function: ease-out;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+    
+                -moz-transition: all 2s;
+                -webkit-transition: all 2s;
+                transition: all 2s;
+    
+                &:hover {
+                    -moz-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
             }
         }
-    }
-}
-
-.contact-me {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    padding:4% 30%;
-    
-    h2 {
-        align-self: center;
-    }
-
-    .contact-buttons{
-        align-self: center;
     }
 }
