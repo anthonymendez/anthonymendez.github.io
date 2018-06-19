@@ -1,16 +1,24 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(document).ready(function() {
-    $('#navmenulinks').localScroll({duration:800});
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            var href = $anchor.attr('href');
+            var fixedHref = href.substring(href.indexOf("#"));
+
+            var topPadding = parseInt($('.site-header').css('height'), 10);
+            console.log($(fixedHref).offset().top);
+            $('html, body').stop().animate({
+                scrollTop: $(fixedHref).offset().top - (topPadding)
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
 });
 
 $(document).ready(function(){
-    var topPadding = 
-        // parseInt($('.site-header').css('padding-top'), 10) + 
-        // parseInt($('.site-header').css('margin-top'), 10) +
-        // parseInt($('.site-header').css('padding-bottom'), 10) + 
-        // parseInt($('.site-header').css('margin-bottom'), 10) +
-        parseInt($('.site-header').css('height'), 10) + "px";
+    var height = parseInt($('.site-header').css('height'), 10);
+    var imgTopBit = parseInt($('#main').css('height'), 10) / 16;
+    var topPadding = (height - imgTopBit) + "px"
     $('.content').css('padding-top', topPadding);
-    // var boxsizing = $('.site-header').css('box-sizing');
-    // $('.content').css('box-sizing', boxsizing);
 });
