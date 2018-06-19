@@ -17,7 +17,7 @@ theme_settings:
   header_text: > #two or three lines to describe your site
    <h1> Hi, I'm Anthony Mendez </h1>
   #  <h3>Computer Engineer, Programmer, Nerd, Motorsports Enthusiast</h3>
-  header_text_feature_image: assets/img/pexels/contactphoto.JPG
+  header_text_feature_image: assets/img/pexels/contactphoto.jpg
   footer_text: >
    Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
