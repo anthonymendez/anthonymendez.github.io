@@ -71,7 +71,7 @@
 
         .post-img img {
             //max-width: 100%;
-
+            z-index: 100;
             -moz-transition-timing-function: ease-out;
             -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
