@@ -14,11 +14,23 @@ $(document).ready(function() {
             event.preventDefault();
         });
     });
-});
 
-$(document).ready(function(){
     var height = parseInt($('.site-header').css('height'), 10);
     var imgTopBit = parseInt($('#main').css('height'), 10) / 16;
     var topPadding = (height - imgTopBit) + "px"
     $('.content').css('padding-top', topPadding);
 });
+
+window.onload = function(){
+    var url = $(location).attr('href');
+    if (url.indexOf("#") != -1) { 
+        url = url.substring(url.indexOf("#"));
+        scrollTop = 0;
+        var topPadding = parseInt($('.site-header').css('height'), 10);
+            console.log($(url).offset().top);
+            $('html, body').stop().animate({
+                scrollTop: $(url).offset().top - (topPadding)
+            }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    }
+};
