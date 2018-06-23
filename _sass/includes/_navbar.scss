@@ -17,7 +17,9 @@
 
     .separator {
         user-select: none;
-        opacity: $navbar-separator-opacity;
+        color: rgba(0,0,0,0.3);
+        // opacity: $navbar-separator-opacity;
+        // border-left: 2px groove $border-color;
 
         &:first-child {
             display: none;
