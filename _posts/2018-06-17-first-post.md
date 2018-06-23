@@ -2,8 +2,8 @@
 layout: post
 title: FIRST!
 tags: [First Post]
-feature-img: "assets/img/pexels/contactphoto.jpg"
-thumbnail: "assets/img/pexels/contactphoto.jpg"
+feature-img: "assets/img/pexels/builtwith.png"
+thumbnail: "assets/img/pexels/builtwith.png"
 excerpt_separator: <!--Separate!-->
 ---
 
@@ -25,6 +25,8 @@ I went back and forth on using a framework, to building it from scratch, etc. I 
 ### So what is this all about?
 
 Well anything I've been working on, whether it be in school or a side project. Maybe what I'm doing at work but I'll only in a very vague sense.
+
+While it is all hosted on Github Pages!
 
 My main goal is just to be consistent with how often I'm posting. I originally had target of once a weekend, but that can be excessive, so I'll be keeping it a minimum of twice a month.
 
