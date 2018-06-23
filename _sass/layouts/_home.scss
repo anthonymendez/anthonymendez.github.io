@@ -7,6 +7,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     list-style-type: none;
+    align-self: center;
 
     @media (max-width: 600px){
         flex-wrap: wrap;
