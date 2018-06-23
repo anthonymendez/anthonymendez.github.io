@@ -6,7 +6,7 @@ img: "assets/img/portfolio/corgicourse.png"
 date: 2017-07-17
 ---
 
-Corgi Course is 2D Side-Scrolling Infinite Runner game. The game is very barebones and basic with the objective being: Jump over all the scary vacuum cleaners.
+Corgi Course is 2D Side-Scrolling Infinite Runner game made in Unity. The game is very barebones with a basic objective: Jump over all the scary vacuum cleaners. Corgi Course was made in a week with two friends for a Game Jam.
 
 ### Development
 
