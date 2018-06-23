@@ -6,7 +6,9 @@ feature-img: "assets/img/portfolio/forwardvsbackwards.png"
 img: "assets/img/portfolio/forwardvsbackwards.png"
 date: 2017-06-14
 ---
-This post is a demonstration to see whether a forward or backwards loop in Java, is faster than the other. Main inspiration by this article: <a href="https://medium.com/@TravCav/why-reverse-loops-are-faster-a09d65473006">https://medium.com/@TravCav/why-reverse-loops-are-faster-a09d65473006</a>
+Forward vs Backward Loops is a a test of the speed difference between Forward and Backwards loops in Java. The test was performed by measuring the time of looping arrays of various sizes. Afterwards it would be logged to a text file which would then be imported to an Excel file for graphing.
+
+Inspired by: <a href="https://medium.com/@TravCav/why-reverse-loops-are-faster-a09d65473006">https://medium.com/@TravCav/why-reverse-loops-are-faster-a09d65473006</a>
 
 ## Disclaimer
 

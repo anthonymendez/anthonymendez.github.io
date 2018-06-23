@@ -6,7 +6,7 @@ img: "assets/img/portfolio/simplecoins.png"
 date: 2017-01-15
 ---
 
-Simple Coins is a Minecraft 1.11.2 Mod made in Java, that expands the trading experience between players and villagers, Mod intends to cater to a more "authentic" economic experience, with a "Mint" block to create iron and gold coins.
+Simple Coins is a Minecraft 1.11.2 Mod made in Java, that expands the trading experience between players and villagers, Mod intends to cater to a more "authentic" economic experience, with a "Mint" block to create iron and gold coins. Simple Coins is implemented with the Minecraft Forge API.
 
 The mod would add two coins (Iron and Gold) that could only be created with the Mint Block. There would also be a Banker Villager where you could trade your coins for emeralds.
 

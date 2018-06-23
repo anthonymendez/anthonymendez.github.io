@@ -6,7 +6,7 @@ img: "assets/img/portfolio/vectorshot.png"
 date: 2017-07-4
 ---
 
-Vector Shot is a top-down, 2D space shooter built in Unity. Inspired by Hotline Miami, Vector Shot is a short, fast-paced game that requires patience to learn the map. Vector Shot was made for in a week for a game jam. 
+Vector Shot is a top-down, 2D space shooter built in Unity. Inspired by Hotline Miami, Vector Shot is a short, fast-paced game that requires patience to learn the map. Vector Shot was made for in a week for a game jam.
 
 ### Game Objective
 
