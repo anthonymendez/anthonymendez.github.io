@@ -4,6 +4,9 @@
     {% for item in site.portfolio reversed %}
     <div class="portfolio-cell">
         <a href="{{ site.baseurl }}{{ item.url }}" class="portfolio-link" data-keyboard="true">
+            <h4 style = "text-align: center; align-self: center;">
+                {{ item.title }}
+            </h4>
             <div class="caption" title="{{ item.title }}">
                 <div class="caption-content">
                     <i class="fa fa-search-plus fa-3x"></i>

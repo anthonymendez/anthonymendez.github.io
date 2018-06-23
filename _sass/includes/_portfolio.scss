@@ -45,8 +45,13 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
+  @media (max-width: width 600%){
+    align-items: center;
+  }
+
 }
 .portfolio-cell {
   flex: 0 0 32%;
   margin-bottom: 10px;
+  align-items: center;
 }
