@@ -1,12 +1,11 @@
 .site-header {
-    //padding-bottom: 1%;
+    $nav-bottom-color: lightgray;
     padding: 2% 2% 1% 2%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d4d4d4+0,999999+100 */
     background: $brand-color; /* Old browsers */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+84,ffffff+100&1+0,1+84,0+100 */
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, $nav-bottom-color 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,$nav-bottom-color 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,$nav-bottom-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
     // border-bottom: $border-radius/2 groove $border-color;
     display: inline-block;
@@ -14,6 +13,8 @@
     width: 100%;
     position: fixed;
     z-index: 500;
+    border-bottom: 2px groove $nav-bottom-color;
+
     .separator {
         user-select: none;
         opacity: $navbar-separator-opacity;
