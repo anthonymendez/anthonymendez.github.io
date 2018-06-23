@@ -10,11 +10,12 @@
     color: $header-desc-text-color;
     background: $header-desc-background-color no-repeat;
     background-size: $feature-image-size;
+    background-position: initial !important;
 
     /* --- Responsive --- */
     @media screen and (max-width: 850px) {
-        background-position-x: 25% !important;
-        background-size: 130% auto;
+        background-size: 135%;
+        background-position-y: 0.5em !important;
     }
     
     //For white images
