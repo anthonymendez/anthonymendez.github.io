@@ -4,15 +4,13 @@
 
 .contact-buttons {
     display:inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    flex-direction: row;
     list-style-type: none;
-    width: 50%;
 
     @media (max-width: 600px){
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -20,25 +18,28 @@
         width: 100%;
     }
 
-    border-radius: 10px;
-    border: 2px groove $border-color;
-    background-color: $background-color;
+    h1 {
+        padding-right: $padding-small;
+        align-self: flex-start;
+        white-space: nowrap;
 
-    padding:$padding-x-small/2;
-
-    h2 {
-        padding:0;
-        color: $text-color;
-        align-self: center;
-        display: inline-flex;
+        @media (max-width: 600px){
+            padding-right: auto;
+            padding-bottom: $padding-medium;
+        }
     }
 
     div {
         align-self: center;
         display:inline-flex;
         flex-direction: row;
-        justify-content: center;
+        // justify-content: center;
         padding: 0;
+        padding-left: $padding-x-small;
+
+        @media (max-width: 600px){
+            padding: 0;
+        }
     }
 }
 
