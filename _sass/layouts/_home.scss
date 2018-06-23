@@ -68,6 +68,10 @@
         display: inline-flex;
         flex-direction: row;
 
+        @media (max-width: 600px){
+            flex-direction: column;
+        }
+
         .portfolio-sample-block {
             width: 100%;
             display:flex;
