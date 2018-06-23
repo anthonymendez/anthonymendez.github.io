@@ -25,33 +25,30 @@ layout: default
 <hr />
 
   <div class="portfolio-sample">
-    <article>
+    <article class = "portfolio-sample-title">
       <h1>Here are my most recent projects</h1> 
     </article>
-     {% for post in site.portfolio limit:3 %}
-      <article class="portfolio-sample-block">
-          <div>
-            <h3>
-              <a class = "post-link" href = "{{ site.baseurl }}{{ post.url }}">
-                {{post.title}}
-              </a>
-            </h3>
-            <div>
-              <div class = "post-img">
-                <img src = "{{ site.baseurl }}/{{ post.img }}" />
-              </div>
-              <p>
-                  {{post.content | strip_html | truncate:500 }}
-              </p>
-              <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-                  {{ site.theme_settings.str_continue_reading }}
-              </a>
-             </div>
+    <div>
+      {% for post in site.portfolio limit:3 %}
+      <div class="portfolio-sample-block">
+          <h3>
+            <a class = "post-link" href = "{{ site.baseurl }}{{ post.url }}">
+              {{post.title}}
+            </a>
+          </h3>
+          <div class = "post-img">
+            <img src = "{{ site.baseurl }}/{{ post.img }}" />
           </div>
-      </article>
-    {% endfor %}
+          <p>
+            {{post.excerpt | truncate:500 }}
+          </p>
+          <a class="button" href="{{ post.url | prepend: site.baseurl }}">
+            {{ site.theme_settings.str_continue_reading }}
+          </a>
+      </div>
+      {% endfor %}
+      </div>
     </div>
-
 <hr />
 
   <div class="posts">

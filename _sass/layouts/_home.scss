@@ -1,5 +1,5 @@
 .background-zoom {
-    
+
 }
 
 .contact-buttons {
@@ -53,37 +53,44 @@
     display: inline-flex;
     flex-direction: column;
 
-    article {
+    .portfolio-sample-title {
         border: none;
         padding-top: 0;
+
+        h1 {
+            width: 100%;
+        }
     }
 
-    .portfolio-sample-block {
-        width: 100%;
-        display:flex;
-        padding:0% 15%;
-        box-sizing: border-box;
-        padding-bottom: $padding-small;
-
-        @media (max-width: 600px) {
-            flex-direction: column;
-            padding-left: -$padding-x-small;
-            padding-right: -$padding-x-small;
-        }
+    div {
         
-        div {
+        display: inline-flex;
+        flex-direction: row;
+
+        .portfolio-sample-block {
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            padding-left: $padding-small;
+            padding-right: $padding-small;            
+            padding-bottom: $padding-small;
             color: $text-color;
-            
-            img {
-                width: 100%;
-                padding: 0;
-                vertical-align: middle;
+
+            @media (max-width: 600px) {
+                padding-left: -$padding-x-small;
+                padding-right: -$padding-x-small;
             }
 
             .post-img {
                 vertical-align: middle;
                 border-radius: 10px;
                 overflow: hidden;
+
+                img {
+                    width: 100%;
+                    padding: 0;
+                    vertical-align: middle;
+                }
 
                 @media (min-width: $break) {
                     height: 250px;
