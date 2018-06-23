@@ -2,8 +2,8 @@
 layout: post
 title: FIRST!
 tags: [First Post]
-feature-img: "assets/img/pexels/homephoto.jpg"
-thumbnail: "assets/img/pexels/homephoto.jpg"
+feature-img: "assets/img/pexels/homephoto.JPG"
+thumbnail: "assets/img/pexels/homephoto.JPG"
 excerpt_separator: <!--Separate!-->
 ---
 
