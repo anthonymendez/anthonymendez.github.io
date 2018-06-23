@@ -68,7 +68,7 @@
         display: inline-flex;
         flex-direction: row;
 
-        @media (max-width: 600px){
+        @media (max-width: 1000px){
             flex-direction: column;
         }
 
