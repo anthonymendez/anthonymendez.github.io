@@ -3,7 +3,7 @@ baseurl: ""
 url: "https://anthonymendez.github.io"
 title: Anthony Mendez's Personal Site # site's title
 description: "My personal blog and portfolio." # used by search engines
-
+host: 0.0.0.0 # Local testing on LAN
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
