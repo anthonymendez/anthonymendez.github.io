@@ -10,13 +10,12 @@
     align-self: center;
 
     @media (max-width: 600px){
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
 
     @media (max-width: 1200px){
-        width: 100%;
+        
     }
 
     h1 {
