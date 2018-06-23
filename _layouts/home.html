@@ -37,7 +37,10 @@ layout: default
       <h1>Here are my most recent projects</h1> 
     </article>
     <div>
-      {% for post in site.portfolio limit:3 %}
+      <!-- Temporary fix for a bug in Jekyll -->
+      <!-- https://github.com/Shopify/liquid/pull/456 -->
+      {% assign portfolio = site.portfolio | reverse %}
+      {% for post in portfolio limit:3 %}
       <div class="portfolio-sample-block">
           <h3>
             <a class = "post-link" href = "{{ site.baseurl }}{{ post.url }}">
