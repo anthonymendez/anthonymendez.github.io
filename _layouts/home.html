@@ -63,8 +63,8 @@ layout: default
       {% endfor %}
       </div>
     </div>
-<hr />
-
+<!-- 
+  <hr />
   <div class="posts">
     {% for post in paginator.posts limit:1 %}
     <div class="post-teaser">
@@ -91,7 +91,6 @@ layout: default
           </header>
           <div class="excerpt">
               {{ post.excerpt | strip_html | escape }}
-            <!--{{ post.content | strip_html | truncate: "250" }}-->
             <br />
             <a class="button" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}
@@ -118,13 +117,5 @@ layout: default
     {% endif %}
   </div>
   {% endif %}
+   -->
 </div>
-
-<!-- <div class = "contact-buttons">
-    <h2>
-      Get in Touch
-    </h2>
-    <div>
-      {% include icons.html %}
-    </div>
-  </div> -->
