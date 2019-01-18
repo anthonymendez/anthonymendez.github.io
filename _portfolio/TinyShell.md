@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tiny Shell"
+tags: [C, UNIX]
 feature-img: "assets/img/portfolio/tinyshell.png"
 img: "assets/img/portfolio/tinyshell.png"
 date: 2018-11-06

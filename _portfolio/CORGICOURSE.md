@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Corgi Course"
+tags: [C#, Unity, Collaboration]
 feature-img: "assets/img/portfolio/corgicourse.png"
 img: "assets/img/portfolio/corgicourse.png"
 date: 2017-07-17

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Go Fish in C"
+tags: [C, Game Design, UNIX]
 feature-img: "assets/img/portfolio/gofishinc.png"
 img: "assets/img/portfolio/gofishinc.png"
 date: 2018-10-15

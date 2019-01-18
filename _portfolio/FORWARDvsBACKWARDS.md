@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Forward vs Backwards Loops"
+tags: [Java, Test]
 subtitle: "in Java"
 feature-img: "assets/img/portfolio/forwardvsbackwards.png"
 img: "assets/img/portfolio/forwardvsbackwards.png"

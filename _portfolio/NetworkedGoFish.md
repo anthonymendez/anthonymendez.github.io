@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Networked Go Fish"
+tags: [C, Networking, Game Design]
 feature-img: "assets/img/portfolio/networkedgofish.png"
 img: "assets/img/portfolio/networkedgofish.png"
 date: 2018-12-04

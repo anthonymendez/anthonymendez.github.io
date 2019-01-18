@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "C Chat Room"
+tags: [C, UNIX, Networking]
 feature-img: "assets/img/portfolio/cchatroom.png"
 img: "assets/img/portfolio/cchatroom.png"
 date: 2018-12-14

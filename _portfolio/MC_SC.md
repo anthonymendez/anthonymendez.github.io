@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Simple Coins: A Minecraft Mod"
+tags: [Java, Minecraft, Game Design]
 feature-img: "assets/img/portfolio/simplecoins.png"
 img: "assets/img/portfolio/simplecoins.png"
 date: 2017-01-15

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Vector Shot 2.0"
+tags: [C#, Unity]
 feature-img: "assets/img/portfolio/vectorshot2.png"
 img: "assets/img/portfolio/vectorshot2.png"
 date: 2018-08-11
