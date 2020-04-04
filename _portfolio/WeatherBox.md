@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SDP 2020: WeatherBox"
-tags: [C, STM32, Networking, Python, Azure, Flask, HTTP, HTML, JS, CSS, Google Maps, Google Sign-In, API]
+tags: [C, STM32, Networking, Python, Azure, Flask, HTTP, HTML, JS, CSS, Google Maps, Google Sign-In, API, I2C, USART, Firmware, Google]
 feature-img: "assets/img/portfolio/weatherbox/weatherbox_header.jpg"
 img: "assets/img/portfolio/weatherbox/weatherbox.jpg"
 date: 2020-04-01
@@ -14,19 +14,24 @@ Weather Box is a low-cost, low-power weather sensing solution that sends weather
 <a href = "http://weatherbox.azurewebsites.net/">Azure Website</a>
 
 ### Team
+
 * Advisor: <a href = "https://www.linkedin.com/in/michael-zink-a7b830/">Professor Michael Zink</a>
 * Software Lead: <a href = "https://www.linkedin.com/in/anthonymendez-/">Anthony Mendez</a>
 * Hardware Lead: <a href = "https://www.linkedin.com/in/tina-maurer-a22843176/">Tina Maurer</a>
 * Communications: <a href = "https://www.linkedin.com/in/stephan-kim-70ba6913a/">Stephan Kim</a>
 * Website and Interpolation: <a href = "https://www.linkedin.com/in/christian-norton-b65250131/">Christian Nortan</a>
 
+### Special Thanks
+
+TBD
+
 ### Abstract
 
-As part of pre-flight preparations, drone operators must check the local weather conditions to ensure a safe and successful flight. While commercial weather stations can effectively collect data for a specified area at the macroscale, weather conditions in that area at the microscale can vary greatly. Since flight conditions can be greatly affected by these constraints, drone operators need a more accurate localized weather map reading for the area of flight. Weather Box will create this localized map in a network of battery powered sensor modules to provide drone users with the required information via a website and application. Our product will allow operators to quickly decide whether the conditions are suitable for safe drone flight.
+As part of pre-flight preparations, drone operators must check the local weather conditions to ensure a safe and successful flight. While commercial weather stations can effectively collect data for a specified area at the macroscale, weather conditions in that area at the microscale can vary greatly. Since flight conditions can be greatly affected by these constraints, drone operators need a more accurate localized weather map reading for the area of flight. Weather Box will create this localized map in a network of battery-powered sensor modules to provide drone users with the required information via a website and application. Our product will allow operators to quickly decide whether the conditions are suitable for safe drone flight.
 
 ### Development
 
-Development of the project was broken up into four main sections quarters. Preliminary Design Review, Midway Design Review, Cumulative Design Review, and Final Design Review.
+The development of the project was broken up into four main sections quarters. Preliminary Design Review, Midway Design Review, Cumulative Design Review, and Final Design Review.
 
 The majority of this section is written from my perspective and meant to be reflective of my own work. So any deep technical insight, especially on the hardware side should not be expected.
 
@@ -34,7 +39,7 @@ The majority of this section is written from my perspective and meant to be refl
 
 When we were coming up with a project idea, we didn't know what route or domain we wanted to go in.
 
-[Professor Christopher Hollot](https://www.linkedin.com/in/christopher-hollot-2651a86/) let us know in an email with a few projects that some researchers and companies in our department had. So we talked to one of the researchers about their project. The researcher we talked to was [Apoorva Bajaj](https://www.linkedin.com/in/apoorva-bajaj-abb57b3/). His project was something along the lines of figuring out weather, more specifically wind speed and direction, before deploying an drone for emergency operations. This information is critical in knowing whether not conditions were safe for a drone to fly in.
+[Professor Christopher Hollot](https://www.linkedin.com/in/christopher-hollot-2651a86/) let us know in an email with a few projects that some researchers and companies in our department had. So we talked to one of the researchers about their project. The researcher we talked to was [Apoorva Bajaj](https://www.linkedin.com/in/apoorva-bajaj-abb57b3/). His project was something along the lines of figuring out weather conditions, more specifically wind speed and direction, before deploying a drone for emergency operations. This information is critical in knowing whether not conditions were safe for a drone to fly in.
 
 Of course, for Senior Design Project, this project presented a few challenges. How can we accurately measure wind speed and direction? How can we test this out with a drone when none of us have any drone flying experience or an FAA license?
 
@@ -57,37 +62,37 @@ For our microcontroller, we decided to go with an STM32 microcontroller. More sp
 
 In order to transmit our data, we needed a Wi-Fi module. We decided on the [Espressif Systems ESP8266](https://www.sparkfun.com/products/13678) module. The ESP8266 is a popular choice in the Arduino community, and it's relatively easy to program for. One module costs about $7.
 
-On the web server side, we decided to go with Microsoft's Azure to host our website. They offer discounted and free resources for student, and a quick and easy setup for web applications. We decided to go for the Python library Flask for the web server since it is easy to prototype with and it is an extensive library with documentation.
+On the web server side, we decided to go with Microsoft's Azure to host our website. They offer discounted and free resources for student, and quick and easy setup for web applications. We decided to go for the Python library Flask for the web server since it is easy to prototype with and it is an extensive library with documentation.
 
 For Midway Design Review, we promised these deliverables:
 
 * Two sensor packages capable of measuring simulated wind speed, temperature, and barometric pressure (including protoboard for custom sensor PCB)
 * Basic weather map created by the two sensor packages in a small and simulated test environment
-* UI able to display raw data from Weather Boxes to remote server terminal
+* UI able to display raw data from Weather Boxes to a remote server terminal
 
 We provided these as the initial System Specifications:
 
-* Each unit will take measurement at its location and the web server must create a map of at least 150x50 m2 based on data from sensor packages
+* Each unit will take measurements at its location and the web server must create a map of at least 150x50 m2 based on data from sensor packages
 * Each sensor package must be mountable and weigh less than one pound
 * System must measure wind, temperature, barometric pressure, humidity, dust, and air quality
-* Battery life of combined solar cell and backup battery of at least 24 hours
+* A battery life of at least 24 hours
 * System must be operable in the range of 20 degrees Fahrenheit to 100 degrees Fahrenheit
 * Be able to transmit weather measurements wirelessly to a user interface
 * Each unit must be manufacturable for at most $120
 
-We also provided an overall project stretch goal that we want to mounta Weather Box to a drone for real time weather conditions at different altitudes. If we were to go this route, we would focus more on the public safety aspect, such as helping police decide if conditions are suitable for a drone mission.
+We also provided an overall project stretch goal that we want to mount a Weather Box to a drone for real-time weather conditions at different altitudes. If we were to go this route, we would focus more on the public safety aspect, such as helping police decide if conditions are suitable for a drone mission.
 
 ![Drone Image Here!](/assets/img/portfolio/weatherbox/drone_photoshop.jpg)
 
 #### Midway Design Review
 
-After Preliminary Design Review, we modified our solution going forward based off some recommendations of our reviwers.
+After Preliminary Design Review, we modified our solution going forward based off some recommendations of our reviewers.
 
 ![MDR Block Diagram](/assets/img/portfolio/weatherbox/mdr_block_diagram.png)
 
 We decided to remove the solar cell from the power system to simplify designing the power circuitry. As well as change some of our System Specifications
 
-* Each sensor package will take measurement at its location and the web server must create a map of at least 75x50 m2 based on data from sensor packages
+* Each sensor package will take measurements at its location and the web server must create a map of at least 75x50 m2 based on data from sensor packages
 * Each sensor package must be mountable and weighs less than one pound
 * Each sensor package must measure wind, temperature, barometric pressure, humidity, dust, and air quality with 95% confidence
 * Each sensor package must have a battery life of at least 24 hours
@@ -105,7 +110,29 @@ We downsized the size of the map to 75 x 50 meters squared. We added in a confid
 * The sensor package will be powered by a battery
 * Map displaying the location and data points of each sensor package
 
-With this, we began work on the prototype. Tina set to work designing the power circuitry. I went ahead 
+With this, we began work on the prototype. Tina set to work designing the power circuitry. I went ahead setting up how our project's overall software loop would work out. In the early stages this hard to design. Even more so since we don't have that much experience designing systems like these from the ground up. However, with a lot of Googling, and perseverance we were able to get a good prototype down for MDR.
+
+##### Power Circuitry
+
+TBD:
+
+##### Firmware
+
+Starting with the Nucleo boards, we weren't sure how to exactly start developing for it. STM32 provides some good documentation and starter projects for getting something set up and working. We decided to start doing some minimal changes just to test see how STM32 IDE works. One of the first things we set up was the interrupt timer. We set up the interrupt timer so that the microcontroller would read the sensors every 10 seconds. This was easy to do as the STM32 provides an interface called the Cube to modify the behavior and properties of components, like the internal ADC, GPIO pins, etc. So Stephan was able to modify some of the timer's parameters to go off about every 10 seconds. We were able to test this by toggling an LED on the Nucleo board.
+
+The next step was getting the Bosch BME280 sensor connected and working. After reading through some documentation on the sensor, the sensor utilizes the I2C communication protocol, as did our microcontroller. The Bosch sensor required a connection to ground, I2C SDA (Serial Data), I2C SCL (Serial Clock), and 3.3V power. With Tina's power circuitry, hooking up ground and 3.3V was no problem. To get I2C working on the microcontroller, we had to enable I2C in the Cube interface, select two GPIO pins as SCL and SDA wires, then hooked them up.
+
+Once the sensor was hooked up, programming the sensor was straight-forward... somewhat. STM projects come with the HAL API. The API abstracts a lot of the work needed to use certain features on the microcontroller. Bosch also provides a C driver that we implemented in our project. The way the driver works, we pass in function pointers for a read, write and delay, and the driver will handle initializing the sensor and settings. So everytime the microcontroller is powered up, it will initialize the sensor. Afterwards, everytime the interrupt function runs, it will use the driver's read data function.
+
+The Wi-Fi module was tricky. It uses USART to communicate data with the microcontroller. But in order to control the module, we had to send in [AT commands](https://room-15.github.io/blog/2015/03/26/esp8266-at-command-reference/). This made debugging a little bit more difficult since we couldn't see what exactly was going on. So we hooked up an Arduino board to listen in on the USART communications. We used the Arduino Serial Monitor to see all the response codes between return from the module. Once we got the module connected to the Wi-Fi, set up an HTTP Post command the our website with the data formatted in a JSON string.
+
+##### Python Web Server
+
+
+
+##### Website
+
+
 
 ![MDR Block Diagram Prototype](/assets/img/portfolio/weatherbox/mdr_block_diagram_prototype.png)
 
