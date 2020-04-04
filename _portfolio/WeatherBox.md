@@ -140,6 +140,10 @@ The Wi-Fi module was tricky. It uses USART to communicate data with the microcon
 
 #### Cumulative Design Review
 
+![CDR Weatherbox Main Board](/assets/img/portfolio/weatherbox/weatherbox_board_main.png)
+
+![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)
+
 #### Final Design Review
 
 ### Links
