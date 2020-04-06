@@ -23,7 +23,7 @@ theme_settings:
 
   # Icons
   rss: false  # Make sure you created a feed.xml with feed.xml layout
-  email_address: "anthonymende@umass.edu"
+  email_address: # "anthonymende@umass.edu"
   behance:
   bitbucket:
   dribbble:
