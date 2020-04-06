@@ -4,7 +4,7 @@ title: "SDP 2020: WeatherBox"
 tags: [C, STM32, Networking, Python, Azure, Flask, HTTP, HTML, JS, CSS, Google Maps, Google Sign-In, API, I2C, USART, Firmware, Google]
 feature-img: "assets/img/portfolio/weatherbox/weatherbox_header.jpg"
 img: "assets/img/portfolio/weatherbox/weatherbox.jpg"
-date: 2020-04-01
+date: 2020-03-31
 ---
 
 Weather Box is a low-cost, low-power weather sensing solution that sends weather data to a web server on Microsoft Azure. Created for UMass ECE Senior Design Project 2020.

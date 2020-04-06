@@ -1,14 +1,14 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://anthonymendez.github.io"
-title: Anthony Mendez's Personal Site # site's title
+title: Anthony Mendez's Site # site's title
 description: "My personal blog and portfolio." # used by search engines
 host: 0.0.0.0 # Local testing on LAN
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Anthony Mendez's Personal Site # blog's title
+  title: Anthony Mendez's Site # blog's title
   avatar: assets/img/Anthony.png
   favicon: assets/img/Anthony.png
   gravatar: # Email MD5 hash
