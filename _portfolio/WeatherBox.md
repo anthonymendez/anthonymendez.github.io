@@ -136,9 +136,17 @@ Once the sensor was hooked up, programming the sensor was straight-forward... so
 
 The Wi-Fi module was tricky. It uses USART to communicate data with the microcontroller. But in order to control the module, we had to send in [AT commands](https://room-15.github.io/blog/2015/03/26/esp8266-at-command-reference/). This made debugging a little bit more difficult since we couldn't see what exactly was going on. So we hooked up an Arduino board to listen in on the USART communications. We used the Arduino Serial Monitor to see all the response codes between the return from the module. Once we got the module connected to the Wi-Fi, we set up an HTTP Post command to our website with the data formatted in a JSON string.
 
-##### Python Web Server
+##### Web Server
 
-TBD:
+When we were deciding what language to use for our web-server, we decided on Python for a variety of reasons. The first is the Python is a very easy language to prototype with. It doesn't take much work just to get something up and running. The second is that there are a lot of resources online Python's web server library, Flask. The documentation for Flask is already really good. It's further topped with all the Stack Overflow questions and answers available online. The third is that we wanted to use more Python since our academic and work experience has us using C or Java more often then not. We wanted to widen our programming experience and try using something completely different than what we're used to.
+
+After we established Python as our programming language, we decided to go with vanilla SQL for our database. The reason is that this was the only option avaiable for the Azure Student Pack, and it would only cost us $5 a month for a few gigabytes. This was plenty.
+
+The first thing we needed to do was for the web server to be able to receive the HTTP Post data from our microcontrollers. This was easy enough as Flask makes it really easy to define URL routes with the request type. Afterwards, we verify the data type is a JSON, extract the data from the JSON, and then store it to the SQL database.
+
+Ahh but storing the SQL database is another headache. In order to post the SQL database, we had to do a few things. The first was to add the pyodbc module to run SQL queries. Using this library, we need to format a connection string. The connection string consists of the type of SQL driver being used, the name of the SQL server, the database name, the PORT (usually 1433), the username, and the password. Once this connection string is set, we set whatever queries need to save the data to the database, execute, then commit the changes.
+
+Retrieving data is nearly the same process. Set up an HTTP Get route. Create a query to retrieve data from the SQL server. Format that data into a JSON string, then send to the client.
 
 ##### Website
 
@@ -160,7 +168,7 @@ Continuing where Tina left off...
 
 TBD:
 
-##### Python Web Server
+##### Web Server
 
 TBD:
 
