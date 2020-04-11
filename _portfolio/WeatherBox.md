@@ -9,17 +9,17 @@ date: 2020-03-31
 
 Weather Box is a low-cost, low-power weather sensing solution that sends weather data to a web server on Microsoft Azure. Created for UMass ECE Senior Design Project 2020.
 
-<a href = "http://www.ecs.umass.edu/ece/sdp/sdp20/team03/">Senior Design Project Website</a>
+[Senior Design Project Website](http://www.ecs.umass.edu/ece/sdp/sdp20/team03/)
 
-<a href = "http://weatherbox.azurewebsites.net/">Azure Website</a>
+[Azure Website](http://weatherbox.azurewebsites.net/)
 
 ### Team
 
-* Advisor: <a href = "https://www.linkedin.com/in/michael-zink-a7b830/">Professor Michael Zink</a>
-* Software Lead: <a href = "https://www.linkedin.com/in/anthonymendez-/">Anthony Mendez</a>
-* Hardware Lead: <a href = "https://www.linkedin.com/in/tina-maurer-a22843176/">Tina Maurer</a>
-* Communications: <a href = "https://www.linkedin.com/in/stephan-kim-70ba6913a/">Stephan Kim</a>
-* Website and Interpolation: <a href = "https://www.linkedin.com/in/christian-norton-b65250131/">Christian Nortan</a>
+* Advisor: [Professor Michael Zink](https://www.linkedin.com/in/michael-zink-a7b830/)
+* Software Lead: [Anthony Mendez](https://www.linkedin.com/in/anthonymendez-/)
+* Hardware Lead: [Tina Maurer](https://www.linkedin.com/in/tina-maurer-a22843176/)
+* Communications: [Stephan Kim](https://www.linkedin.com/in/stephan-kim-70ba6913a/)
+* Website and Interpolation: [Christian Nortan](https://www.linkedin.com/in/christian-norton-b65250131/)
 
 ### Special Thanks
 
@@ -114,7 +114,17 @@ With this, we began work on the prototype. Tina set to work designing the power 
 
 ##### Power Circuitry
 
-TBD:
+Since I was not in charge of the power circuit, I asked [Tina](https://www.linkedin.com/in/tina-maurer-a22843176/) if she could do a write-up.
+
+"We determined the requirements for the power circuitry based on the supply voltages required for the various sensors, MCU, and wifi module in the system. The necessary supplies were at +3.3V, +5V, and +12V. We used a +12V battery stack of AA batteries, giving us the capacity necessary to run the system for over 24 hours.
+
+"In the first stage of this project, we implemented two step-down LDO regulators,
+one from the stack to obtain +5V, and the other connected to the +5V to obtain
+the +3.3V line. While this gave us stable supply lines for all components,
+each system drew over 100mA at all times, making this a high-power and fairly
+inefficient solution."
+
+For MDR, this "fairly inefficient solution" worked pretty well. However, for CDR, Tina ended up changing our power solution. More on that later.
 
 ##### Firmware
 
@@ -122,17 +132,17 @@ Starting with the Nucleo boards, we weren't sure how to exactly start developing
 
 The next step was getting the Bosch BME280 sensor connected and working. After reading through some documentation on the sensor, the sensor utilizes the I2C communication protocol, as did our microcontroller. The Bosch sensor required a connection to ground, I2C SDA (Serial Data), I2C SCL (Serial Clock), and 3.3V power. With Tina's power circuitry, hooking up ground and 3.3V was no problem. To get I2C working on the microcontroller, we had to enable I2C in the Cube interface, select two GPIO pins as SCL and SDA wires, then hooked them up.
 
-Once the sensor was hooked up, programming the sensor was straight-forward... somewhat. STM projects come with the HAL API. The API abstracts a lot of the work needed to use certain features on the microcontroller. Bosch also provides a C driver that we implemented in our project. The way the driver works, we pass in function pointers for a read, write and delay, and the driver will handle initializing the sensor and settings. So everytime the microcontroller is powered up, it will initialize the sensor. Afterwards, everytime the interrupt function runs, it will use the driver's read data function.
+Once the sensor was hooked up, programming the sensor was straight-forward... somewhat. STM projects come with the HAL API. The API abstracts a lot of the work needed to use certain features on the microcontroller. Bosch also provides a C driver that we implemented in our project. The way the driver works, we pass in function pointers for a read, write and delay, and the driver will handle initializing the sensor and settings. So everytime the microcontroller is powered up, it will initialize the sensor. Afterward, everytime the interrupt function runs, it will use the driver's read data function.
 
-The Wi-Fi module was tricky. It uses USART to communicate data with the microcontroller. But in order to control the module, we had to send in [AT commands](https://room-15.github.io/blog/2015/03/26/esp8266-at-command-reference/). This made debugging a little bit more difficult since we couldn't see what exactly was going on. So we hooked up an Arduino board to listen in on the USART communications. We used the Arduino Serial Monitor to see all the response codes between return from the module. Once we got the module connected to the Wi-Fi, set up an HTTP Post command the our website with the data formatted in a JSON string.
+The Wi-Fi module was tricky. It uses USART to communicate data with the microcontroller. But in order to control the module, we had to send in [AT commands](https://room-15.github.io/blog/2015/03/26/esp8266-at-command-reference/). This made debugging a little bit more difficult since we couldn't see what exactly was going on. So we hooked up an Arduino board to listen in on the USART communications. We used the Arduino Serial Monitor to see all the response codes between the return from the module. Once we got the module connected to the Wi-Fi, we set up an HTTP Post command to our website with the data formatted in a JSON string.
 
 ##### Python Web Server
 
-
+TBD:
 
 ##### Website
 
-
+TBD:
 
 ![MDR Block Diagram Prototype](/assets/img/portfolio/weatherbox/mdr_block_diagram_prototype.png)
 
@@ -140,11 +150,27 @@ The Wi-Fi module was tricky. It uses USART to communicate data with the microcon
 
 #### Cumulative Design Review
 
+##### Power Circuitry
+
+Continuing where Tina left off...
+
+"So, in the later stages of the project, we swapped the LDO regulators for low-power switching regulators. As we only transmitted data to the server every 10 seconds, it was not necessary to have a regulator which operated constantly. This allowed us to lower our power consumption significantly and create a more efficient system. The switching regulators are each connected to the battery stack to create the other rails."
+
+##### Firmware
+
+TBD:
+
+##### Python Web Server
+
+TBD:
+
 ![CDR Weatherbox Main Board](/assets/img/portfolio/weatherbox/weatherbox_board_main.png)
 
 ![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)
 
-#### Final Design Review
+#### Final Project Review
+
+TBD:
 
 ### Links
 
