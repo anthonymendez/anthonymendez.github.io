@@ -44,6 +44,50 @@ layout: default
 
 <hr />
 
+  <div class="resume">
+    <div class="resume-title">
+      <h1>Resume</h1>
+    </div>
+    <div class="resume_education">
+      <h2>Education</h2>
+    </div>
+    <div class="resume_work">
+      <h2>Experience</h2>
+      <div>
+      {% assign resume = site.resume | reverse %}
+      {% for work in resume %}
+      <div class="resume_work_item">
+        <div class="resume_work_item_info">
+          <h3 class="resume_work_item_company">
+            {{ work.company }}
+          </h3>
+          <div class="resume_work_item_position_date">
+            <h4 class="resume_work_item_position">
+              {{ work.position }}
+            </h4>
+            <h5>
+              {{ work.start_date | date:"%B %Y" }} - {{ work.end_date | date:"%B %Y" }}
+            </h5>
+          </div>
+        </div>
+        <div class="resume_work_item_excerpt">
+          {{work.excerpt}}
+        </div>
+        <div class="resume_work_item_tags">
+          {% for tag in work.tags %}
+            <div class="resume_work_item_tags_tag">
+              {{tag}}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+
+<hr />
+
   <div class="portfolio-sample">
     <article class = "portfolio-sample-title">
       <h1>Recent Projects</h1> 
