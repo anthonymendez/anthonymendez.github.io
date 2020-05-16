@@ -105,7 +105,8 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:name
-
+  resume:
+    output: true
 
 # BUILD SETTINGS
 markdown: kramdown
