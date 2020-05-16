@@ -52,12 +52,13 @@ layout: default
     <div class="resume_education">
       <article class="resume_education_title">
         <h2>Education</h2>
+        <hr />
       </article>
       <div>
         {% assign education = site.education | reverse %}
         {% for school in education %}
         <article class="resume_education_item">
-          <h3>
+          <h3 class="resume_education_item_name">
             {{school.name}}
           </h3>
           <div class="resume_education_degree_date">
@@ -74,11 +75,14 @@ layout: default
     </div>
 
     <div class="resume_work">
-      <h2>Experience</h2>
+      <article class="resume_work_title">
+        <h2>Experience</h2>
+        <hr />
+      </article>
       <div>
         {% assign resume = site.resume | reverse %}
         {% for work in resume %}
-        <div class="resume_work_item">
+        <article class="resume_work_item">
           <div class="resume_work_item_info">
             <h3 class="resume_work_item_company">
               {{ work.company }}
@@ -87,7 +91,7 @@ layout: default
               <h4 class="resume_work_item_position">
                 {{ work.position }}
               </h4>
-              <h5 class="resume_work_item_date">
+              <h4 class="resume_work_item_date">
                 {{ work.start_date | date:"%B %Y" }} - {{ work.end_date | date:"%B %Y" }}
               </h5>
             </div>
@@ -102,7 +106,7 @@ layout: default
               </div>
             {% endfor %}
           </div>
-        </div>
+        </article>
         {% endfor %}
       </div>
     </div>

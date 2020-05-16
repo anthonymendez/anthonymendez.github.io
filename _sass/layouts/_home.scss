@@ -121,3 +121,86 @@
         }
     }
 }
+
+.resume {
+    .resume_title {
+        border: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .resume_education {
+        .resume_education_title {
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+        div {
+            .resume_education_item {
+                border: none;
+                padding-top: 0;
+                padding-bottom: 0;
+                display: inline-flex;
+                flex-direction: column;
+
+                .resume_education_item_name {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .resume_education_degree_date {
+                    display: inline-flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    
+                    h4 {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .resume_work {
+        .resume_work_title {
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        div {
+            .resume_work_item {
+                border: none;
+                padding-top: 0;
+                padding-bottom: 0;
+                display: inline-flex;
+                flex-direction: column;
+
+                .resume_work_item_info {
+                    display: inline-flex;
+                    flex-direction: column;
+
+                    .resume_work_item_company {
+                        margin-bottom: 0;
+                    }
+
+                    .resume_work_item_position_date {
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        h4 {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
