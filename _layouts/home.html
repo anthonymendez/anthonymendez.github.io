@@ -45,43 +45,65 @@ layout: default
 <hr />
 
   <div class="resume">
-    <div class="resume-title">
+    <article class="resume_title">
       <h1>Resume</h1>
-    </div>
+    </article>
+
     <div class="resume_education">
-      <h2>Education</h2>
+      <article class="resume_education_title">
+        <h2>Education</h2>
+      </article>
+      <div>
+        {% assign education = site.education | reverse %}
+        {% for school in education %}
+        <article class="resume_education_item">
+          <h3>
+            {{school.name}}
+          </h3>
+          <div class="resume_education_degree_date">
+            <h4 class="resume_education_degree">
+              {{school.degree}}
+            </h4>
+            <h4 class="resume_education_item_date">
+              {{ school.start_date | date:"%B %Y" }} - {{ school.end_date | date:"%B %Y" }}
+            </h4>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </div>
+
     <div class="resume_work">
       <h2>Experience</h2>
       <div>
-      {% assign resume = site.resume | reverse %}
-      {% for work in resume %}
-      <div class="resume_work_item">
-        <div class="resume_work_item_info">
-          <h3 class="resume_work_item_company">
-            {{ work.company }}
-          </h3>
-          <div class="resume_work_item_position_date">
-            <h4 class="resume_work_item_position">
-              {{ work.position }}
-            </h4>
-            <h5>
-              {{ work.start_date | date:"%B %Y" }} - {{ work.end_date | date:"%B %Y" }}
-            </h5>
+        {% assign resume = site.resume | reverse %}
+        {% for work in resume %}
+        <div class="resume_work_item">
+          <div class="resume_work_item_info">
+            <h3 class="resume_work_item_company">
+              {{ work.company }}
+            </h3>
+            <div class="resume_work_item_position_date">
+              <h4 class="resume_work_item_position">
+                {{ work.position }}
+              </h4>
+              <h5 class="resume_work_item_date">
+                {{ work.start_date | date:"%B %Y" }} - {{ work.end_date | date:"%B %Y" }}
+              </h5>
+            </div>
+          </div>
+          <div class="resume_work_item_excerpt">
+            {{work.excerpt}}
+          </div>
+          <div class="resume_work_item_tags">
+            {% for tag in work.tags %}
+              <div class="resume_work_item_tags_tag">
+                {{tag}}
+              </div>
+            {% endfor %}
           </div>
         </div>
-        <div class="resume_work_item_excerpt">
-          {{work.excerpt}}
-        </div>
-        <div class="resume_work_item_tags">
-          {% for tag in work.tags %}
-            <div class="resume_work_item_tags_tag">
-              {{tag}}
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
+        {% endfor %}
       </div>
     </div>
   </div>

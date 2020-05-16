@@ -107,6 +107,10 @@ collections:
     permalink: /:collection/:name
   resume:
     output: true
+    permalink: /:collection/:name
+  education:
+    output: true
+    permalink: /:collection/:name
 
 # BUILD SETTINGS
 markdown: kramdown
