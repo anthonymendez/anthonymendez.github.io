@@ -8,7 +8,6 @@ date: 2019-05-01
 ---
 
 * Saved Citrix money with a Costs Reporting System to show engineers the costs of AWS and Azure resource costs
-
     * Deployed code to Citrix's Cloud Operations Website to display cloud resource costs
 
     * Established database table and connection for cost storage using Hibernate

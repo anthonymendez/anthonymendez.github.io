@@ -8,7 +8,6 @@ date: 2016-06-01
 ---
 
 Hosted small group tutoring sessions for UMass students in the Intro to Java course.
-
 * Strategy used for tutoring sessions included creating code examples from lecture to review and reinforce material
 
 * Helped students through difficult problems to further develop Java skills
