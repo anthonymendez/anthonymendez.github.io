@@ -9,5 +9,4 @@ date: 2017-06-01
 
 * Debugged in Android ADB for Zebra’s Android Marshmallow OS and applications
 * Utilized JIRA to find, track, report, and discuss the issues on the OS platform
-
 * Filmed and edited instructional videos to show company clients how to install OS updates
