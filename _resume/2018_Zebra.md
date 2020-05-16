@@ -1,7 +1,7 @@
 ---
 company: "Zebra Technologies"
 position: "Software Engineering Intern"
-tags: [Java, Android, Bug Testing]
+tags: [Java, Android, Android ADB]
 start_date: 2018-06-01
 end_date: 2018-08-01
 date: 2018-06-01

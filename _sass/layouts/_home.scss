@@ -123,6 +123,11 @@
 }
 
 .resume {
+    
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 6%;
+    float:left;
+
     .resume_title {
         border: none;
         padding-top: 0;
@@ -172,6 +177,10 @@
             border: none;
             padding-top: 0;
             padding-bottom: 0;
+
+            h2 {
+                margin-bottom: 0;
+            }
         }
 
         div {
@@ -187,6 +196,7 @@
                     flex-direction: column;
 
                     .resume_work_item_company {
+                        margin-top: 0;
                         margin-bottom: 0;
                     }
 
@@ -197,6 +207,41 @@
 
                         h4 {
                             margin-top: 0;
+                        }
+
+                        .resume_work_item_position {
+                            text-align: left;
+                        }
+
+                        .resume_work_item_date {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                .resume_work_item_excerpt {
+
+                }
+
+                .resume_work_item_tags {
+                    display: inline-flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    .resume_work_item_tags_tag {
+                        padding: 10px;
+                        margin: 1px;
+                        border-style: solid;
+                        border-color: #383838;
+                        border-width: 2px;
+                        border-radius: 15px;
+                        width: 33%;
+                        text-align: center;
+                        vertical-align: middle;
+
+                        p {
+                            margin: 0;
                         }
                     }
                 }

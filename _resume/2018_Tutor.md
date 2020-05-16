@@ -1,7 +1,7 @@
 ---
 company: "University of Massachusetts Amherst"
 position: "Learning Resource Center ExSEL Tutor"
-tags: [Java, Patience, Empathy, Verbal Communication, Guidance]
+tags: [Java, Patience, Empathy, Guidance]
 start_date: 2017-06-01
 end_date: 2017-09-01
 date: 2016-06-01

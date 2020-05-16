@@ -19,6 +19,7 @@ layout: default
       <h1 id = "aboutme">
         About Me
       </h1>
+      <hr />
       <p>
         I graduated from <a herf = "http://www.umass.edu/">Umass-Amherst</a> with a Bachelors of Science in Computer Engineering.
       </p>
@@ -41,8 +42,6 @@ layout: default
       </div> -->
     </section>
   </article>
-
-<hr />
 
   <div class="resume">
     <article class="resume_title">
@@ -102,7 +101,9 @@ layout: default
           <div class="resume_work_item_tags">
             {% for tag in work.tags %}
               <div class="resume_work_item_tags_tag">
-                {{tag}}
+                <p>
+                  {{tag}}
+                </p>
               </div>
             {% endfor %}
           </div>
@@ -112,11 +113,12 @@ layout: default
     </div>
   </div>
 
-<hr />
+  <hr />
 
   <div class="portfolio-sample">
     <article class = "portfolio-sample-title">
       <h1><a href="{{site.baseurl}}/portfolio/">Recent Projects</a></h1> 
+      <hr />
     </article>
     <div>
       <!-- Temporary fix for a bug in Jekyll -->
