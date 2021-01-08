@@ -33,7 +33,7 @@ As part of pre-flight preparations, drone operators must check the local weather
 
 The development of the project was broken up into four main sections quarters. Preliminary Design Review, Midway Design Review, Cumulative Design Review, and Final Design Review.
 
-The majority of this section is written from my perspective and meant to be reflective of my own work. So any deep technical insight, especially on the hardware side should not be expected. <hr />
+The majority of this section is written from my perspective and meant to be reflective of my own work. So any deep technical insight, especially on the hardware side should not be expected. 
 
 #### Preliminary Design Review
 
@@ -82,7 +82,7 @@ We provided these as the initial System Specifications:
 
 We also provided an overall project stretch goal that we want to mount a Weather Box to a drone for real-time weather conditions at different altitudes. If we were to go this route, we would focus more on the public safety aspect, such as helping police decide if conditions are suitable for a drone mission.
 
-![Drone Image Here!](/assets/img/portfolio/weatherbox/drone_photoshop.jpg)<hr />
+![Drone Image Here!](/assets/img/portfolio/weatherbox/drone_photoshop.jpg)
 
 #### Midway Design Review
 
@@ -174,7 +174,7 @@ TBD:
 
 ![CDR Weatherbox Main Board](/assets/img/portfolio/weatherbox/weatherbox_board_main.png)
 
-![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)<hr />
+![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)
 
 #### Final Project Review
 
