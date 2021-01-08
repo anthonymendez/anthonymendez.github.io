@@ -23,7 +23,7 @@ Weather Box is a low-cost, low-power weather sensing solution that sends weather
 
 ### Special Thanks
 
-TBD
+Special thanks to many people throughout this project. First and foremost, thank you to Professor Zink for all the support and assistance he provided throughout the project. I would also like to thank [Professor Tessier](https://ece.umass.edu/faculty/russell-tessier) and [Professor Pishro-Nik](https://ece.umass.edu/faculty/hossein-pishro-nik) for their feedback during peer review, as well as [Professor Holcomb](https://ece.umass.edu/faculty/daniel-holcomb) for stepping in as a reviewer for CDR. Another round of thanks to the [M5 staff](http://umassamherstm5.org/), for allowing us to use their tools and components. And finally, thank you to the [Provost office](https://www.umass.edu/provost/) for aiding us in collecting additional funds for the poroject, and [Apoorva  Bajaj](https://www.linkedin.com/in/apoorva-bajaj-abb57b3/) for assisiting us in the initial research.
 
 ### Abstract
 
@@ -33,7 +33,7 @@ As part of pre-flight preparations, drone operators must check the local weather
 
 The development of the project was broken up into four main sections quarters. Preliminary Design Review, Midway Design Review, Cumulative Design Review, and Final Design Review.
 
-The majority of this section is written from my perspective and meant to be reflective of my own work. So any deep technical insight, especially on the hardware side should not be expected.
+The majority of this section is written from my perspective and meant to be reflective of my own work. So any deep technical insight, especially on the hardware side should not be expected.\
 
 #### Preliminary Design Review
 
@@ -62,7 +62,7 @@ For our microcontroller, we decided to go with an STM32 microcontroller. More sp
 
 In order to transmit our data, we needed a Wi-Fi module. We decided on the [Espressif Systems ESP8266](https://www.sparkfun.com/products/13678) module. The ESP8266 is a popular choice in the Arduino community, and it's relatively easy to program for. One module costs about $7.
 
-On the web server side, we decided to go with Microsoft's Azure to host our website. They offer discounted and free resources for student, and quick and easy setup for web applications. We decided to go for the Python library Flask for the web server since it is easy to prototype with and it is an extensive library with documentation.
+On the web server side, we decided to go with Microsoft's Azure to host our website. They offer discounted and free resources for students, and quick and easy setup for web applications. We decided to go for the Python library Flask for the web server since it is easy to prototype with and it is an extensive library with documentation.
 
 For Midway Design Review, we promised these deliverables:
 
@@ -82,7 +82,7 @@ We provided these as the initial System Specifications:
 
 We also provided an overall project stretch goal that we want to mount a Weather Box to a drone for real-time weather conditions at different altitudes. If we were to go this route, we would focus more on the public safety aspect, such as helping police decide if conditions are suitable for a drone mission.
 
-![Drone Image Here!](/assets/img/portfolio/weatherbox/drone_photoshop.jpg)
+![Drone Image Here!](/assets/img/portfolio/weatherbox/drone_photoshop.jpg)\
 
 #### Midway Design Review
 
@@ -140,9 +140,9 @@ The Wi-Fi module was tricky. It uses USART to communicate data with the microcon
 
 When we were deciding what language to use for our web-server, we decided on Python for a variety of reasons. The first is the Python is a very easy language to prototype with. It doesn't take much work just to get something up and running. The second is that there are a lot of resources online Python's web server library, Flask. The documentation for Flask is already really good. It's further topped with all the Stack Overflow questions and answers available online. The third is that we wanted to use more Python since our academic and work experience has us using C or Java more often then not. We wanted to widen our programming experience and try using something completely different than what we're used to.
 
-After we established Python as our programming language, we decided to go with vanilla SQL for our database. The reason is that this was the only option avaiable for the Azure Student Pack, and it would only cost us $5 a month for a few gigabytes. This was plenty.
+After we established Python as our programming language, we decided to go with vanilla SQL for our database. The reason is that this was the only option available for the Azure Student Pack, and it would only cost us $5 a month for a few gigabytes. This was plenty.
 
-The first thing we needed to do was for the web server to be able to receive the HTTP Post data from our microcontrollers. This was easy enough as Flask makes it really easy to define URL routes with the request type. Afterwards, we verify the data type is a JSON, extract the data from the JSON, and then store it to the SQL database.
+The first thing we needed to do was for the web server to be able to receive the HTTP Post data from our microcontrollers. This was easy enough as Flask makes it really easy to define URL routes with the request type. Afterward, we verify the data type is a JSON, extract the data from the JSON, and then store it to the SQL database.
 
 Ahh but storing the SQL database is another headache. In order to post the SQL database, we had to do a few things. The first was to add the pyodbc module to run SQL queries. Using this library, we need to format a connection string. The connection string consists of the type of SQL driver being used, the name of the SQL server, the database name, the PORT (usually 1433), the username, and the password. Once this connection string is set, we set whatever queries need to save the data to the database, execute, then commit the changes.
 
@@ -154,7 +154,7 @@ TBD:
 
 ![MDR Block Diagram Prototype](/assets/img/portfolio/weatherbox/mdr_block_diagram_prototype.png)
 
-![MDR Outdoor Test](/assets/img/portfolio/weatherbox/mdr_test_outdoor.png)
+![MDR Outdoor Test](/assets/img/portfolio/weatherbox/mdr_test_outdoor.png)\
 
 #### Cumulative Design Review
 
@@ -174,11 +174,11 @@ TBD:
 
 ![CDR Weatherbox Main Board](/assets/img/portfolio/weatherbox/weatherbox_board_main.png)
 
-![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)
+![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)\
 
 #### Final Project Review
 
-TBD:
+Because of coronavirus, we could never fully complete the project. TThe in-lab portion of the project was canceled. 
 
 ### Links
 
@@ -202,13 +202,13 @@ TBD:
 
 * [Professor Michael Zink](https://www.linkedin.com/in/michael-zink-a7b830/)
 
-* [Anthony Mendez](https://www.linkedin.com/in/anthonymendez-/)
+* [Anthony Mendez's (ME!) LinkedIn](https://www.linkedin.com/in/anthonymendez-/)
 
-* [Tina Maurer](https://www.linkedin.com/in/tina-maurer-a22843176/)
+* [Tina Maurer's LinkedIn](https://www.linkedin.com/in/tina-maurer-a22843176/)
 
-* [Stephan Kim](https://www.linkedin.com/in/stephan-kim-70ba6913a/)
+* [Stephan Kim's LinkedIn](https://www.linkedin.com/in/stephan-kim-70ba6913a/)
 
-* [Christian Nortan](https://www.linkedin.com/in/christian-norton-b65250131/)
+* [Christian Nortan LinkedIn](https://www.linkedin.com/in/christian-norton-b65250131/)
 
 * [Professor Christopher Hollot](https://www.linkedin.com/in/christopher-hollot-2651a86/)
 
