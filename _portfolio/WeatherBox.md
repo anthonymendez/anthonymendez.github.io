@@ -11,7 +11,7 @@ Weather Box is a low-cost, low-power weather sensing solution that sends weather
 
 [Senior Design Project Website](http://www.ecs.umass.edu/ece/sdp/sdp20/team03/)
 
-[Azure Website](http://weatherbox.azurewebsites.net/)
+[Archived Azure Website](https://web.archive.org/web/20200406054559/http://weatherbox.azurewebsites.net/)
 
 ### Team
 
@@ -33,7 +33,7 @@ As part of pre-flight preparations, drone operators must check the local weather
 
 The development of the project was broken up into four main sections quarters. Preliminary Design Review, Midway Design Review, Cumulative Design Review, and Final Design Review.
 
-The majority of this section is written from my perspective and meant to be reflective of my own work. So any deep technical insight, especially on the hardware side should not be expected.\
+The majority of this section is written from my perspective and meant to be reflective of my own work. So any deep technical insight, especially on the hardware side should not be expected. <hr />
 
 #### Preliminary Design Review
 
@@ -82,7 +82,7 @@ We provided these as the initial System Specifications:
 
 We also provided an overall project stretch goal that we want to mount a Weather Box to a drone for real-time weather conditions at different altitudes. If we were to go this route, we would focus more on the public safety aspect, such as helping police decide if conditions are suitable for a drone mission.
 
-![Drone Image Here!](/assets/img/portfolio/weatherbox/drone_photoshop.jpg)\
+![Drone Image Here!](/assets/img/portfolio/weatherbox/drone_photoshop.jpg)<hr />
 
 #### Midway Design Review
 
@@ -174,7 +174,7 @@ TBD:
 
 ![CDR Weatherbox Main Board](/assets/img/portfolio/weatherbox/weatherbox_board_main.png)
 
-![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)\
+![CDR Weatherbox Sensor Board](/assets/img/portfolio/weatherbox/weatherbox_board_sensor.png)<hr />
 
 #### Final Project Review
 
@@ -184,7 +184,7 @@ Because of coronavirus, we could never fully complete the project. TThe in-lab p
 
 * [UMass ECE Senior Design Project Team Website](http://www.ecs.umass.edu/ece/sdp/sdp20/team03/)
 
-* [Project Website on Azure](http://weatherbox.azurewebsites.net/)
+* [Archived Project Website that was on Azure](https://web.archive.org/web/20200406054559/http://weatherbox.azurewebsites.net/)
 
 * [STM32L073RZ Microcontroller](https://www.st.com/en/microcontrollers-microprocessors/stm32l073rz.html)
 
