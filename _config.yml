@@ -1,21 +1,21 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://anthonymendez.github.io"
-title: Anthony Mendez's Site # site's title
-description: "My personal blog and portfolio." # used by search engines
+title: Anthony's Dev Site # site's title
+description: "Personal Portfolio, blog, etc." # used by search engines
 host: 0.0.0.0 # Local testing on LAN
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Anthony Mendez's Site # blog's title
+  title: Anthony's Dev Site # blog's title
   avatar: assets/img/Anthony.png
   favicon: assets/img/Anthony.png
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-   <h1> Hi, I'm Anthony Mendez </h1>
+   <h1> Hi, I'm Anthony </h1>
   #  <h3>Computer Engineer, Programmer, Nerd, Motorsports Enthusiast</h3>
   header_text_feature_image: assets/img/pexels/contactphoto.jpg
   footer_text: >
@@ -23,7 +23,7 @@ theme_settings:
 
   # Icons
   rss: false  # Make sure you created a feed.xml with feed.xml layout
-  email_address: # "anthonymende@umass.edu"
+  email_address: # "anthony@anthonymendez.dev"
   behance:
   bitbucket:
   dribbble:
