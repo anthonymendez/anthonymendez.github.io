@@ -1,8 +1,8 @@
 --- 
 layout: page
-title : Portfolio 
-permalink: /portfolio/
+title : Projects 
+permalink: /projects/
 feature-img: "assets/img/pexels/portfoliophoto.jpg"
 ---
 
-{% include portfolio.html %}
+{% include projects.html %}

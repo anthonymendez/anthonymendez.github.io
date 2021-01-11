@@ -28,6 +28,6 @@ Well anything I've been working on, whether it be in school or a side project. M
 
 While it is all hosted on Github Pages!
 
-My main goal is just to be consistent with how often I'm posting. I originally had target of once a weekend, but that can be excessive, so I'll be keeping it a minimum of twice a month.
+My main goal is just to be consistent with how often I'm posting. I originally had a target of once a weekend, but that can be excessive, so I'll be keeping it a minimum of twice a month.
 
 My *dream* goal would be keep this blog running for a long-time like <a href = "https://blog.codinghorror.com/">Coding Horror</a>. It'll be hard, but hey, that's why it's a *dream* goal.
