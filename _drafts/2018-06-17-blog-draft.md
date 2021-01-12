@@ -1,13 +1,15 @@
 ---
 layout: post
-title: FIRST!
+title: Blog Title
 date: 2018-06-17
-tags: FirstPost, Blog
+tags: Blog
 ---
 
 ### Hi! Welcome to my new personal website! 
 
 I've been working on and off on a portfolio-type website for a bit of time now. Never actually finished it. Like here was a prototype I was working on for some time...
+
+<!--Separate!-->
 
 ![]({{ site.baseurl }}/img/posts/scratchwebsite.png)
 *My attempt at building a site from scratch... <strong>yeesh</strong>*
