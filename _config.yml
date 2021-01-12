@@ -16,6 +16,10 @@ icon: "/img/Anthony.png"
 hometitle: Hi, I'm Anthony!
 homedesc: This is my personal website. Portfolio, Resume, Blogging, etc.
 
+# Posts Page
+next_post_text: "Next post:"
+previous_post_text: "Previous post:"
+
 permalink: /:year/:month/:day/:title/
 
 # other links
