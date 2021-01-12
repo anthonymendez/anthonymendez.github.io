@@ -6,6 +6,9 @@ tags: FirstPost, Blog
 categories: Blog
 ---
 
+* content
+{:toc}
+
 ### Hi! Welcome to my new personal website! 
 
 I've been working on and off on a portfolio-type website for a bit of time now. Never actually finished it. Like here was a prototype I was working on for some time...

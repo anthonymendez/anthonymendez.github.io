@@ -7,6 +7,8 @@ layout: default
         <h1>{{ site.hometitle }}</h1>
         <small>{{ site.homedesc }}</small>
         <hr>
+        {% include about.html %}
+        <hr>
         <ul>
             {% for post in paginator.posts %}
               <li>
