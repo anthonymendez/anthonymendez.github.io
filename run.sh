@@ -1,1 +1,1 @@
-bundle exec jekyll serve --host 127.0.0.1 --incremental
+bundle exec jekyll serve --host 127.0.0.1 --port 4001 --incremental

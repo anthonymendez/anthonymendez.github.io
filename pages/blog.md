@@ -1,9 +1,10 @@
 --- 
 layout: blog-page
-title : My Blog 
+title : Blog 
 permalink: /blog/
 feature-img: "assets/img/pexels/portfoliophoto.jpg"
-tags: [Blog, Writing]
 ---
+
+This is where I write about whatever, mostly development, or tech-related.
 
 {% include blog.html %}
