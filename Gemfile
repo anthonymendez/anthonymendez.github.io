@@ -1,3 +1,3 @@
-source "https://rubygems.org"
-gem "github-pages", group: :jekyll_plugins
-gem "type-on-strap"
+# source "https://rubygems.org"
+# gem "github-pages", group: :jekyll_plugins
+gem "alembic-jekyll-theme"
