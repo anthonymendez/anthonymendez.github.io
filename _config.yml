@@ -10,6 +10,11 @@ title: Anthony's Dev Site
 brief-intro: Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://anthonymendez.github.io" # the base hostname & protocol for your site
+icon: "/img/Anthony.png"
+
+# Home Page
+hometitle: Hi, I'm Anthony!
+homedesc: This is my personal website. Portfolio, Resume, Blogging, etc.
 
 permalink: /:year/:month/:day/:title/
 

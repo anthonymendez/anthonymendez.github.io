@@ -3,6 +3,7 @@ layout: post
 title: FIRST!
 date: 2018-06-17
 tags: FirstPost, Blog
+categories: Blog
 ---
 
 ### Hi! Welcome to my new personal website! 

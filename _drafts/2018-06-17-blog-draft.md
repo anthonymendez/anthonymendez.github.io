@@ -3,6 +3,7 @@ layout: post
 title: Blog Title
 date: 2018-06-17
 tags: Blog
+categories: Blog
 ---
 
 ### Hi! Welcome to my new personal website! 
