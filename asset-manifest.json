@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/anthonymendez.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/anthonymendez.github.io/static/js/main.f130632c.chunk.js",
+    "main.js.map": "/anthonymendez.github.io/static/js/main.f130632c.chunk.js.map",
+    "runtime-main.js": "/anthonymendez.github.io/static/js/runtime-main.fc5aee37.js",
+    "runtime-main.js.map": "/anthonymendez.github.io/static/js/runtime-main.fc5aee37.js.map",
+    "static/js/2.478488a6.chunk.js": "/anthonymendez.github.io/static/js/2.478488a6.chunk.js",
+    "static/js/2.478488a6.chunk.js.map": "/anthonymendez.github.io/static/js/2.478488a6.chunk.js.map",
+    "static/js/3.cf1a023c.chunk.js": "/anthonymendez.github.io/static/js/3.cf1a023c.chunk.js",
+    "static/js/3.cf1a023c.chunk.js.map": "/anthonymendez.github.io/static/js/3.cf1a023c.chunk.js.map",
+    "index.html": "/anthonymendez.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/anthonymendez.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.478488a6.chunk.js.LICENSE.txt": "/anthonymendez.github.io/static/js/2.478488a6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/anthonymendez.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc5aee37.js",
+    "static/js/2.478488a6.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.f130632c.chunk.js"
+  ]
+}
