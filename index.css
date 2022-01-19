@@ -1,0 +1,30 @@
+#header-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#header-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    /* text-align: center; */
+    margin-top: auto;
+}
+
+#info-panel {
+    max-width: 18rem;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+#main-content  {
+    width: 200rem;
+    padding-left: 3rem;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-left: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
